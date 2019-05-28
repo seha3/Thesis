@@ -9,7 +9,14 @@ class VocalFX extends React.Component {
 //   }
   render() {
     return(
-      <button>whatever</button>
+      <div>
+        <div className = 'buttonalign'>
+          <button className = 'buttoncontainer'>whatever</button>
+          <button className = 'buttoncontainer'>whatever</button>
+          <button className = 'buttoncontainer'>whatever</button>
+          <button className = 'buttoncontainer'>whatever</button>
+        </div>
+      </div>
     )
   }
   
