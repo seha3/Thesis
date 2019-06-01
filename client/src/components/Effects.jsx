@@ -13,11 +13,9 @@ class VocalFX extends React.Component {
       this.handleClick3 = this.handleClick.bind(this);
       this.handleClick4 = this.handleClick.bind(this);
 
-
       this.playAudio = () => {
         if (this.state.isToggleOn===true){
           this.button.play()
-          
         }
       }
     }
@@ -41,9 +39,6 @@ class VocalFX extends React.Component {
       var plucky = new Tone.PluckSynth().toMaster()
       plucky.triggerAttackRelease('Bb4');
     }
-
-    
-   
 
   render() {
     return(

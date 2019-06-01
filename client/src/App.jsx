@@ -10,12 +10,14 @@ import DrumMachine from './components/DrumMachine.jsx';
 class App extends Component {
   render() { 
     return  <div>
-        <h1 id= 'welcome'>TONE MACHINE</h1>
-
-      < DrumMachine />
-      < VocalFX />    
-     
-    </div>;
+              <h1 id= 'welcome'>TONE MACHINE</h1>
+              <div className = 'componentDiv'>
+                < DrumMachine />
+              </div>
+              <div className = 'componentDiv'>
+                < VocalFX />    
+              </div>
+            </div>;
   }
 }
 // hot export works with RHL. Remove line 11 when starting fullstack integration
