@@ -9,6 +9,9 @@ class VocalFX extends React.Component {
         isToggleOn: false
       };
       this.handleClick = this.handleClick.bind(this);
+      this.handleClick2 = this.handleClick.bind(this);
+      this.handleClick3 = this.handleClick.bind(this);
+      this.handleClick4 = this.handleClick.bind(this);
 
 
       this.playAudio = () => {
@@ -18,17 +21,25 @@ class VocalFX extends React.Component {
         }
       }
     }
+
     handleClick() {
-      var synth = new Tone.Synth().toMaster()
-      console.log('synth', synth)
-      synth.triggerAttackRelease("C4", "8n")
+      var synth = new Tone.PolySynth().toMaster()
+      synth.triggerAttackRelease(['C4', 'E4', 'G4', 'B4'], "8n")
+    }
 
-      // var buffer = new Tone.Player("./Vox_01.wav").toMaster()
-      // Tone.Buffer.on('load', () => {
-      //   buffer.start();
-      // })
+    handleClick2() {
+      var synth = new Tone.PolySynth().toMaster()
+      synth.triggerAttackRelease(['A3', 'C#4', 'E4', 'G5'], "8n")
+    }
 
-      // var buffer = new Tone.Buffer('sounds/Vox_01.wav');
+    handleClick3() {
+      var fmSynth = new Tone.FMSynth().toMaster()
+      fmSynth.triggerAttackRelease('C5', "4n");
+    }
+
+    handleClick4() {
+      var plucky = new Tone.PluckSynth().toMaster()
+      plucky.triggerAttackRelease('Bb4');
     }
 
     
@@ -38,13 +49,13 @@ class VocalFX extends React.Component {
     return(
       <div>
         <div className = 'buttonalign'>
-          <button className = 'buttoncontainer' onClick={this.handleClick}><audio ref={(button) => {this.button = button;}}></audio>Voice FX</button>                   
+          <button className = 'buttoncontainer' onClick={this.handleClick}>Poly Synth</button>                   
           <div class="divider"/>
-          <button className = 'buttoncontainer'>Voice FX</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick2}>Poly Synth</button>
           <div class="divider"/>
-          <button className = 'buttoncontainer'>Bass FX</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
           <div className="divider"/>
-          <button className = 'buttoncontainer'>Bass FX</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
         </div>
       </div>
     );
