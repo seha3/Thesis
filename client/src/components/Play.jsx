@@ -1,26 +1,62 @@
-// import React from 'react';
+import React from 'react';
+//import '../play.scss';
+import $ from 'jquery';
+import '../play.css';
 
-// class Play extends React.Component {
-// //   contructor(props) {
-// //     super(props);
-// //     this.state = {
-// //       done: false
-// //     };
-// //   }
-//   render() {
-//     return(
-//       <div> 
-//         <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px"
-// 	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-//   <path class="stroke-solid" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-//     C97.3,23.7,75.7,2.3,49.9,2.5"/>
-//   <path class="stroke-dotted" fill="none" stroke="white"  d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-//     C97.3,23.7,75.7,2.3,49.9,2.5"/>
-//   <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
-// </svg>
-//       </div>
-//     )
-//   }
+
+class Play extends React.Component {
+//   contructor(props) {
+//     super(props);
+//     this.state = {
+//       done: false
+//     };
+    componentDidMount( {
+        $(document).ready(function() {
+            var state = "paused";
+            $('#pause').on('click', function() {
+                if(state == 'paused') {
+                    state = "playing";
+                    $("#circle").attr("class", "play");
+                    $("#from_pause_to_play")[0].beginElement();
+                } else {
+                    state = "paused";
+                    $("#circle").attr("class", "");
+                    $("#from_play_to_pause")[0].beginElement();
+                }
+            });
+        });
+    
+  }
+  render() {
+    return(
+      <div> 
+        <svg width="104" height="104" id='pause'>
+            <circle id="circle" cx="51" cy="51" r="50" stroke-dasharray="314" stroke-dashoffset="0" style="stroke-width:2px;stroke:white;" />
+            <line id='line1' x1="38" y1="30" x2="38" y2="70" style="stroke-width:4px;stroke:white;stroke-linecap: round;" />
+            <path id='line2' d="M 66 30 L 66 50 L 66 70" rx="10" ry="10" style="stroke-width:4px;stroke:white;fill:white;stroke-linejoin: round;stroke-linecap: round;">
+                <animate
+                    attributeName="d"
+                    dur="300ms"
+                    from="M 66 30 L 66 50 L 66 70"
+                    to="M 38 30 L 70 50 L 38 70"
+                    begin="indefinite"
+                    fill="freeze"
+                    id="from_pause_to_play"
+                />
+            </path>
+            <animate
+                xlink:href="#line2"
+                attributeName="d"
+                dur="300ms"
+                from="M 38 30 L 70 50 L 38 70"
+                to="M 66 30 L 66 50 L 66 70"
+                fill="freeze"
+                id="from_play_to_pause"
+                begin="indefinite"
+            />
+      </div>
+    )
+  }
   
-//  }
-// export default Play;
+ }
+export default Play;

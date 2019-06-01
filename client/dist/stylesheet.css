@@ -1,19 +1,41 @@
 .buttonalign {
     display: flex;
     justify-content: space-around;
-    margin-left: 25vw;
+	margin-left: 10vw;
+	margin-right: 10vw
 }
 
 .buttoncontainer {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: center;
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25));
+	background:-moz-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-webkit-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-o-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:-ms-linear-gradient(top, #ffc477 5%, #fb9e25 100%);
+	background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25',GradientType=0);
+	background-color:#ffc477;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:3px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:24px;
+	font-weight:bold;
+	padding:22px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+.divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
@@ -46,9 +68,12 @@ canvas {
 
 h1 {
     color: #FFF;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 6vw;
+    font-weight: normal;
+    font-family: monospace;
+	font-size: 6vw;
+	position: center;
+	margin-left: 10vw;
+	margin-right: 10vw
 }
 	
 p {

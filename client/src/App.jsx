@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // RHL only for front end development
 import { hot } from 'react-hot-loader';
+import Tone from 'tone';
 import VocalFX from './components/Effects.jsx';
 import DrumMachine from './components/DrumMachine.jsx';
-//import Play from './components/Play.jsx';
+// import Play from './components/Play.jsx';
 
 
 class App extends Component {
@@ -11,9 +12,9 @@ class App extends Component {
     return  <div>
         <h1 id= 'welcome'>TONE MACHINE</h1>
 
-  
-      < VocalFX />    
       < DrumMachine />
+      < VocalFX />    
+     
     </div>;
   }
 }
