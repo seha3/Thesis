@@ -25,11 +25,25 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Courier New;
-	font-size:24px;
+	font-size:18px;
 	font-weight:bold;
-	padding:22px 31px;
+	padding:25px 40px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #cc9f52;
+}
+.buttoncontainer:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477));
+	background:-moz-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+	background:-webkit-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+	background:-o-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+	background:-ms-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477',GradientType=0);
+	background-color:#fb9e25;
+}
+.buttoncontainer:active {
+	position:relative;
+	top:1px;
 }
 
 .divider{
@@ -110,15 +124,18 @@ p {
   
   /* Add a background color on hover */
   .btn-group button:hover {
-    background-color: #3e8e41;
-  }
+    background-color: #c8d328;
+	}
+
+
+
 
 .componentDiv {
 	position: relative;
 	margin: 0 0 1em;
 	
 	}
-	
+
 #percussions {
 	background-color: rgb(155, 62, 191);
 	border: 1px solid purple;
@@ -145,11 +162,15 @@ p {
   box-sizing: border-box;
   width: 0;
   height: 74px;
-  border-color: transparent transparent transparent #202020;
+  border-color: transparent transparent transparent whitesmoke;
   transition: 100ms all ease;
   cursor: pointer;
   border-style: double;
-  border-width: 0px 0 0px 60px;
+	border-width: 0px 0 0px 60px;
+	justify-content: flex-end;
+	position: relative;
+	margin-left: 10vw;
+	margin-right: 5vw
 }
 .playpause input[type="checkbox"] {
   position: absolute;
