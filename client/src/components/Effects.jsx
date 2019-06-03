@@ -51,6 +51,49 @@ class VocalFX extends React.Component {
           <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
           <div className="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+        </div>
+        <div className = 'buttonalign'>
+          <button className = 'buttoncontainer' onClick={this.handleClick}>Poly Synth</button>                   
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick2}>Poly Synth</button>
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+        </div>
+        <div className = 'buttonalign'>
+          <button className = 'buttoncontainer' onClick={this.handleClick}>Poly Synth</button>                   
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick2}>Poly Synth</button>
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+        </div>
+        <div className = 'buttonalign'>
+          <button className = 'buttoncontainer' onClick={this.handleClick}>Poly Synth</button>                   
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick2}>Poly Synth</button>
+          <div class="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
+          <div className="divider"/>
+          <button className = 'buttoncontainer' onClick={this.handleClick4}>Bass FX</button>
         </div>
       </div>
     );
