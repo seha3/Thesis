@@ -27,7 +27,7 @@
 	font-family:Courier New;
 	font-size:18px;
 	font-weight:bold;
-	padding:25px 40px;
+	padding:25px 35px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #cc9f52;
 }
@@ -93,7 +93,7 @@ h1 {
 p {
     color: #FFF;
     font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: monospace;
     font-size: 11pt;
     width: 100%;
     max-width: 37vw;
@@ -109,6 +109,8 @@ p {
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
 		float: left; /* Float the buttons side by side */
+		font-weight: normal;
+  	font-family: monospace;
   }
   
   /* Clear floats (clearfix hack) */
@@ -142,7 +144,8 @@ p {
 	padding: 15px 15px 5px 8em;
 	text-align: center;
 	font-weight: normal;
-  font-family: monospace;
+	font-family: monospace;
+	font-size:  15px;
 	display: block;
 	width: 15px;
 	display: flex;
