@@ -16,91 +16,99 @@ class DrumMachine extends React.Component {
     return(
       <div>
           <div className="btn-group">
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>04</button>
-            <button>05</button>
-            <button>06</button>
-            <button>07</button>
-            <button>08</button>
-            <button>09</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
+              <button id = 'percussions'>Percution</button>
+              <button>01</button>
+              <button>02</button>
+              <button>03</button>
+              <button>04</button>
+              <button>05</button>
+              <button>06</button>
+              <button>07</button>
+              <button>08</button>
+              <button>09</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
           </div>
           <div className="btn-group">
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>04</button>
-            <button>05</button>
-            <button>06</button>
-            <button>07</button>
-            <button>08</button>
-            <button>09</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
-          </div>          <div className="btn-group">
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>04</button>
-            <button>05</button>
-            <button>06</button>
-            <button>07</button>
-            <button>08</button>
-            <button>09</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
-          </div>          <div className="btn-group">
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>04</button>
-            <button>05</button>
-            <button>06</button>
-            <button>07</button>
-            <button>08</button>
-            <button>09</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
-          </div>          <div className="btn-group">
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>04</button>
-            <button>05</button>
-            <button>06</button>
-            <button>07</button>
-            <button>08</button>
-            <button>09</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
-            <button>13</button>
-            <button>14</button>
-            <button>15</button>
-            <button>16</button>
+              <button id = 'percussions'>HH</button>
+              <button>01</button>
+              <button>02</button>
+              <button>03</button>
+              <button>04</button>
+              <button>05</button>
+              <button>06</button>
+              <button>07</button>
+              <button>08</button>
+              <button>09</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
+          </div>          
+          <div className="btn-group">
+              <button id = 'percussions'>Clap</button>
+              <button>01</button>
+              <button>02</button>
+              <button>03</button>
+              <button>04</button>
+              <button>05</button>
+              <button>06</button>
+              <button>07</button>
+              <button>08</button>
+              <button>09</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
+          </div>          
+          <div className="btn-group">
+              <button id = 'percussions'>Snare</button>
+              <button>01</button>
+              <button>02</button>
+              <button>03</button>
+              <button>04</button>
+              <button>05</button>
+              <button>06</button>
+              <button>07</button>
+              <button>08</button>
+              <button>09</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
+          </div>          
+          <div className="btn-group">
+              <button id = 'percussions'>Kick</button>
+              <button>01</button>
+              <button>02</button>
+              <button>03</button>
+              <button>04</button>
+              <button>05</button>
+              <button>06</button>
+              <button>07</button>
+              <button>08</button>
+              <button>09</button>
+              <button>10</button>
+              <button>11</button>
+              <button>12</button>
+              <button>13</button>
+              <button>14</button>
+              <button>15</button>
+              <button>16</button>
           </div>
       </div>
     )
