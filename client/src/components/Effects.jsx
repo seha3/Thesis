@@ -40,23 +40,23 @@ class VocalFX extends React.Component {
 
     handleClick() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['C5', 'E5', 'G5', 'B5'], "8n")
+      synth.triggerAttackRelease(['C4', 'E4', 'G4', 'B4'], "1n")
     }
     handleClick2() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['A4', 'C#5', 'E5'], "8n")
+      synth.triggerAttackRelease(['D4', 'F5', 'A5'], "1n")
     }
     handleClick3() {
-      var fmSynth = new Tone.FMSynth().toMaster()
-      fmSynth.triggerAttackRelease('C5', "4n");
+      var duoSynth = new Tone.DuoSynth().toMaster();
+      duoSynth.triggerAttackRelease("C4", "1n");
     }
     handleClick4() {
       var duoSynth = new Tone.DuoSynth().toMaster();
-      duoSynth.triggerAttackRelease("Bb4", "2n");
+      duoSynth.triggerAttackRelease("D4", "1n");
     }
     handleClick5() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("C4", "8n");
+      synth.triggerAttackRelease("C4", "1n");
     }
     handleClick6() {
       var synth = new Tone.Synth().toMaster();
@@ -64,75 +64,75 @@ class VocalFX extends React.Component {
     }
     handleClick7() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['E4', 'G#4', 'B4', 'D#5'], "8n")
+      synth.triggerAttackRelease(['E4', 'G4', 'B4', 'D5'], "1n")
     }
     handleClick8() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['B3', 'D4', 'F4', 'A4'], "8n")
+      synth.triggerAttackRelease(['F3', 'A4', 'C4', 'E4'], "1n")
     }
     handleClick9() {
-      var fmSynth = new Tone.FMSynth().toMaster()
-      fmSynth.triggerAttackRelease('A4', "4n");
+      var duoSynth = new Tone.DuoSynth().toMaster();
+      duoSynth.triggerAttackRelease("E4", "1n");
     }
     handleClick10() {
       var duoSynth = new Tone.DuoSynth().toMaster();
-      duoSynth.triggerAttackRelease("G4", "2n");
+      duoSynth.triggerAttackRelease("F4", "1n");
     }
     handleClick11() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("E4", "8n");
+      synth.triggerAttackRelease("E4", "1n");
     }
     handleClick12() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("F4", "8n");
+      synth.triggerAttackRelease("F4", "1n");
     }
     handleClick13() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['G3', 'B3', 'D4', 'F#4'], "8n")
+      synth.triggerAttackRelease(['A3', 'C3', 'E4'], "1n")
     }
     handleClick14() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['D3', 'F#3', 'A3'], "8n")
+      synth.triggerAttackRelease(['G3', 'Bb3', 'D3'], "1n")
     }
     handleClick15() {
-      var fmSynth = new Tone.FMSynth().toMaster()
-      fmSynth.triggerAttackRelease('F4', "4n");
+      var duoSynth = new Tone.DuoSynth().toMaster();
+      duoSynth.triggerAttackRelease("G4", "1n");
     }
     handleClick16() {
       var duoSynth = new Tone.DuoSynth().toMaster();
-      duoSynth.triggerAttackRelease("E4", "2n");
+      duoSynth.triggerAttackRelease("A4", "1n");
     }
     handleClick17() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("G4", "8n");
+      synth.triggerAttackRelease("G4", "1n");
     }
     handleClick18() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("A4", "8n");
+      synth.triggerAttackRelease("A4", "1n");
     }
     handleClick19() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['F3', 'Ab3', 'C4', 'Eb4'], "8n")
+      synth.triggerAttackRelease(['A3', 'C3', 'E4'], "1n")
     }
     handleClick20() {
       var synth = new Tone.PolySynth().toMaster()
-      synth.triggerAttackRelease(['Eb3', 'Gb3', 'Bb3', 'Db4'], "8n")
+      synth.triggerAttackRelease(['B4', 'D4', 'F4'], "1n")
     }
     handleClick21() {
-      var fmSynth = new Tone.FMSynth().toMaster()
-      fmSynth.triggerAttackRelease('E3', "4n");
+      var duoSynth = new Tone.DuoSynth().toMaster();
+      duoSynth.triggerAttackRelease("B4", "1n");
     }
     handleClick22() {
       var duoSynth = new Tone.DuoSynth().toMaster();
-      duoSynth.triggerAttackRelease("C3", "2n");
+      duoSynth.triggerAttackRelease("C5", "1n");
     }
     handleClick23() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("B4", "8n");
+      synth.triggerAttackRelease("B4", "1n");
     }
     handleClick24() {
       var synth = new Tone.Synth().toMaster();
-      synth.triggerAttackRelease("C5", "8n");
+      synth.triggerAttackRelease("C5", "1n");
     }
 
   render() {
@@ -143,7 +143,7 @@ class VocalFX extends React.Component {
           <div class="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick2}>Poly Synth</button>
           <div class="divider"/>
-          <button className = 'buttoncontainer' onClick={this.handleClick3}>FM Synth</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick3}>Duo Synth</button>
           <div className="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick4}>Duo Synth</button>
           <div className="divider"/>
@@ -156,7 +156,7 @@ class VocalFX extends React.Component {
           <div class="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick8}>Poly Synth</button>
           <div class="divider"/>
-          <button className = 'buttoncontainer' onClick={this.handleClick9}>FM Synth</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick9}>Duo Synth</button>
           <div className="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick10}>Duo Synth</button>
           <div className="divider"/>
@@ -169,7 +169,7 @@ class VocalFX extends React.Component {
           <div class="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick14}>Poly Synth</button>
           <div class="divider"/>
-          <button className = 'buttoncontainer' onClick={this.handleClick15}>FM Synth</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick15}>Duo Synth</button>
           <div className="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick16}>Duo Synth</button>
           <div className="divider"/>
@@ -182,7 +182,7 @@ class VocalFX extends React.Component {
           <div class="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick20}>Poly Synth</button>
           <div class="divider"/>
-          <button className = 'buttoncontainer' onClick={this.handleClick21}>FM Synth</button>
+          <button className = 'buttoncontainer' onClick={this.handleClick21}>Duo Synth</button>
           <div className="divider"/>
           <button className = 'buttoncontainer' onClick={this.handleClick22}>Duo Synth</button>
           <div className="divider"/>
